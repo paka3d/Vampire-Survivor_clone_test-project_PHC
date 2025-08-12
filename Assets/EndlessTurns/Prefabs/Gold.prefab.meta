@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aa0a7464399a8874c9d0d010ecfbb7da
+timeCreated: 1463469758
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Prefabs/Gold.prefab
+  uploadId: 120429

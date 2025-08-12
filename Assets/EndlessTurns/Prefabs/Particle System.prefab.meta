@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f255ff369e1d7774fa648404b1a55c30
+timeCreated: 1463475269
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Prefabs/Particle System.prefab
+  uploadId: 120429

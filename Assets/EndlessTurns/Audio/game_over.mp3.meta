@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 103004e2249b78f4e89d6f9e9d879b2c
+timeCreated: 1463480129
+licenseType: Store
+AudioImporter:
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Audio/game_over.mp3
+  uploadId: 120429

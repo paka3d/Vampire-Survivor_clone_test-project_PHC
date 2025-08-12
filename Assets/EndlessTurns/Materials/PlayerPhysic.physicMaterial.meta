@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 74c87416d63aeed41bdc0e3eb9f14ace
+timeCreated: 1462864032
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Materials/PlayerPhysic.physicMaterial
+  uploadId: 120429

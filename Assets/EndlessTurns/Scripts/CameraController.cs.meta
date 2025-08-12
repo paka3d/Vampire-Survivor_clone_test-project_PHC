@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 157a9a7efed06024ca1c5819a985c1e4
+timeCreated: 1463044480
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Scripts/CameraController.cs
+  uploadId: 120429

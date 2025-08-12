@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7d56693cb785e45769ed6bc8160f338c
+timeCreated: 1459334010
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Prefabs/Services/CoinManager.prefab
+  uploadId: 120429

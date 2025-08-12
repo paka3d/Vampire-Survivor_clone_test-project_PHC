@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 96a793a428049ce419b55862f0df0491
+timeCreated: 1463477479
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Materials/GroundMaterials.mat
+  uploadId: 120429

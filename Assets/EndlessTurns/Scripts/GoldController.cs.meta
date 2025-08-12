@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: f4976be393805ea47b72ab6228c20dfc
+timeCreated: 1463494256
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Scripts/GoldController.cs
+  uploadId: 120429

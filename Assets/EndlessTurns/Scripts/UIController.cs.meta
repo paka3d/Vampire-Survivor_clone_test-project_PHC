@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 8e91d12ffa09d20419b1d89a824bcf1e
+timeCreated: 1463479850
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Scripts/UIController.cs
+  uploadId: 120429

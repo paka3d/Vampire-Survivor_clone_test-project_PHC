@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 884fb1bef2db0614791f7bd904754e67
+timeCreated: 1463046247
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Scripts/WallController.cs
+  uploadId: 120429

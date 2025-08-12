@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 26baa2d945a7e6340a4e0243acdcad9b
+timeCreated: 1462872374
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Prefabs/Ground.prefab
+  uploadId: 120429

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ae9cb5a0dbeb1cb48ada9804852f6996
+timeCreated: 1463477455
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Materials/TheWallMaterials.mat
+  uploadId: 120429

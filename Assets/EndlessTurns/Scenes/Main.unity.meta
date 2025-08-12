@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ba8e9b0456f7de64b82899e7c75b0464
+timeCreated: 1462859675
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Scenes/Main.unity
+  uploadId: 120429

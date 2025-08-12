@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fca2e3f18e7b19b40a3d29cba307454a
+timeCreated: 1463477545
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Materials/GoldMaterial.mat
+  uploadId: 120429

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ea333aa18dd83d74db183a18c5c6f59d
+timeCreated: 1463127637
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Anim/Idle.anim
+  uploadId: 120429

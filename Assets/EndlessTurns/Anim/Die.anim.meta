@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 038ac4ba57ffb65409ef4415eecaacb1
+timeCreated: 1463125410
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Anim/Die.anim
+  uploadId: 120429

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 08d7cf3f2d5adc247b91759d0fd4c360
+timeCreated: 1463125410
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Anim/Ground.controller
+  uploadId: 120429

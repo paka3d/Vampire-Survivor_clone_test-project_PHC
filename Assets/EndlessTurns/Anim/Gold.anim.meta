@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: daed99afc3a0a3f40a54e93f1396e698
+timeCreated: 1463469452
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Anim/Gold.anim
+  uploadId: 120429

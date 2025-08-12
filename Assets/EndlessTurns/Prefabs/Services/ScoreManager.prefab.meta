@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fa2aa775d925b4ceaaa126f0ea5c0f18
+timeCreated: 1449813361
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Prefabs/Services/ScoreManager.prefab
+  uploadId: 120429

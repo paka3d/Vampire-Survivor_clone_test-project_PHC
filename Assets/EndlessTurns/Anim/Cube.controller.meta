@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c36108c6fb8ead243a981aca15a2dbfe
+timeCreated: 1463469452
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Anim/Cube.controller
+  uploadId: 120429

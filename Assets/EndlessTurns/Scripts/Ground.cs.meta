@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b9a338fe2dbd9cd439d240b06f9891c0
+timeCreated: 1463127455
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/Scripts/Ground.cs
+  uploadId: 120429

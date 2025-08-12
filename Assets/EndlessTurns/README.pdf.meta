@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a685162254975458a9d4ebb09ca106eb
+timeCreated: 1464076337
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63501
+  packageName: 'Endless Turns: Complete Game Template'
+  packageVersion: 1.0
+  assetPath: Assets/EndlessTurns/README.pdf
+  uploadId: 120429
