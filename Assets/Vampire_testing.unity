@@ -1065,15 +1065,27 @@ MonoBehaviour:
   ammoButton: {fileID: 575414108}
   videoPlayer: {fileID: 1735264795}
   levelUpVideos:
-  - {fileID: 32900000, guid: 853ae00eb5852cd4ba616eca9274d5f4, type: 3}
-  - {fileID: 32900000, guid: 7bb1278046dc123409e3658ef474c865, type: 3}
-  - {fileID: 32900000, guid: 10146ad74cd3fb443be942287662d330, type: 3}
   - {fileID: 32900000, guid: 7e9bf50af0e65a2468e4a71c0fef9dfd, type: 3}
-  - {fileID: 32900000, guid: 495ab73a22ad3c34da8f3bea29c14be1, type: 3}
-  - {fileID: 32900000, guid: 99bf1a36ad7d8e3479e618c0772a14e7, type: 3}
   - {fileID: 32900000, guid: 241eea4cd2ed8724989a31a86ca3ef1a, type: 3}
   - {fileID: 32900000, guid: d56467947e085d7429b18cd99dbb15d2, type: 3}
   - {fileID: 32900000, guid: 9caab2ea909c09f4998f733a3fad4b4e, type: 3}
+  - {fileID: 32900000, guid: 8ba1d6c02b55a74488aa25f7aa6040a6, type: 3}
+  - {fileID: 32900000, guid: 2213a83579634f44fb2b4fdb96db907f, type: 3}
+  - {fileID: 32900000, guid: 95f2e587c54e20d4b8dbf72956e6aa9c, type: 3}
+  - {fileID: 32900000, guid: 1f61708d2238d944c85ec7516231916c, type: 3}
+  - {fileID: 32900000, guid: 92d442c44c9e8ac4894dbb474e173e70, type: 3}
+  - {fileID: 32900000, guid: 01dbcd87855a06e42b7a9b672b7a5668, type: 3}
+  - {fileID: 32900000, guid: a2361de02d91b38488e26d491071014a, type: 3}
+  - {fileID: 32900000, guid: 47c31d0778b8dff42901e21d88615437, type: 3}
+  - {fileID: 32900000, guid: c7a8a2c4e32955f458bc2900ceb7a39f, type: 3}
+  - {fileID: 32900000, guid: dcdaaa9cf2d7e3f4682c5122ee5717e4, type: 3}
+  - {fileID: 32900000, guid: 76f0a5950b5a5e241923d5975a6c4f5a, type: 3}
+  - {fileID: 32900000, guid: ce0e69914aafdf947a24f13981c4bcee, type: 3}
+  - {fileID: 32900000, guid: 9ac22a0fe4aacf1468141f69497d0d13, type: 3}
+  - {fileID: 32900000, guid: 9b68ab87599cbe5498237a2532824ced, type: 3}
+  - {fileID: 32900000, guid: 0a41f1c4e311bc84d9024541faeb3d46, type: 3}
+  - {fileID: 32900000, guid: 0a41f1c4e311bc84d9024541faeb3d46, type: 3}
+  - {fileID: 32900000, guid: b8dad50b8b60abe4585ab047f20b9029, type: 3}
 --- !u!1 &770445936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,8 +1906,6 @@ MonoBehaviour:
   minFov: 30
   maxFov: 60
   zoomSpeed: 300
-  lookDamping: 0.5
-  level: 1
   levelUpUI: {fileID: 605281236}
 --- !u!114 &1312858882
 MonoBehaviour:
@@ -2173,7 +2183,7 @@ VideoPlayer:
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 1
-  m_AspectRatio: 2
+  m_AspectRatio: 5
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1

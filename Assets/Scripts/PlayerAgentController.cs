@@ -4,53 +4,52 @@ using UnityEngine.InputSystem;
 public class PlayerAgentController : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed = 5f;
-    public float lookSensitivity = 0.1f;
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float lookSensitivity = 0.1f;
 
     [Header("Shooting")]
-    public GameObject bulletPrefab;
-    public Transform bulletSpawn;
-    public float bulletSpeed = 20f;
-    public int maxAmmo = 30;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform bulletSpawn;
+    [SerializeField] private float bulletSpeed = 20f;
+    [SerializeField] private int maxAmmo = 30;
 
     [Header("Look Options")]
-    public bool enablePitch = true;
-    public bool enableYaw = true;
+    [SerializeField] private bool enablePitch = true;
+    [SerializeField] private bool enableYaw = true;
 
     [Header("Zoom")]
-    public float minFov = 30f;
-    public float maxFov = 60f;
-    public float zoomSpeed = 10f;
+    [SerializeField] private float minFov = 30f;
+    [SerializeField] private float maxFov = 60f;
+    [SerializeField] private float zoomSpeed = 10f;
 
-    // Public for UI
     public int CurrentAmmo => ammo;
     public int CurrentHealth => health;
 
-    // Internal state
     private int ammo;
     private int health = 100;
     private Camera cam;
     private PlayerInput playerInput;
-    private float pitch = 0f; // Add this field to track pitch
-    private Vector2 currentMouseDelta;
-    private Vector2 smoothMouseDelta;
-    public float lookDamping = 0.1f; // You can adjust this in the Inspector
+    private float pitch = 0f;
 
-    public int level = 1;
+    public int Level { get; private set; } = 1;
     private int enemiesDefeated = 0;
-    // Reference to UI (set in Inspector)
     public LevelUpUI levelUpUI;
 
     private void Awake()
     {
         cam = GetComponentInChildren<Camera>();
+        if (cam == null)
+            Debug.LogError("Camera not found on PlayerAgentController!");
+
         playerInput = GetComponent<PlayerInput>();
+        if (playerInput == null)
+            Debug.LogError("PlayerInput not found on PlayerAgentController!");
+
         ammo = maxAmmo;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        // Initialize pitch from camera's local rotation
-        pitch = cam.transform.localEulerAngles.x;
-        if (pitch > 180f) pitch -= 360f; // Convert to -180 to 180 range
+        pitch = cam != null ? cam.transform.localEulerAngles.x : 0f;
+        if (pitch > 180f) pitch -= 360f;
     }
 
     private void Update()
@@ -58,7 +57,7 @@ public class PlayerAgentController : MonoBehaviour
         HandleMovement();
         HandleLook();
         HandleZoom();
-        if (playerInput.actions["Fire"].WasPressedThisFrame())
+        if (playerInput != null && playerInput.actions["Fire"].WasPressedThisFrame())
         {
             Shoot();
         }
@@ -66,6 +65,7 @@ public class PlayerAgentController : MonoBehaviour
 
     private void HandleMovement()
     {
+        if (playerInput == null) return;
         Vector2 dir = playerInput.actions["Move"].ReadValue<Vector2>();
         Vector3 move = (transform.right * dir.x + transform.forward * dir.y).normalized;
         transform.position += move * moveSpeed * Time.deltaTime;
@@ -73,15 +73,14 @@ public class PlayerAgentController : MonoBehaviour
 
     private void HandleLook()
     {
+        if (playerInput == null) return;
         Vector2 mouseDelta = playerInput.actions["Look"].ReadValue<Vector2>();
-        // Yaw (rotate player horizontally)
         if (enableYaw)
         {
-            float yaw = mouseDelta.x * lookSensitivity;
-            transform.Rotate(0f, yaw, 0f, Space.World);
+            float deltaYaw = mouseDelta.x * lookSensitivity;
+            transform.Rotate(0f, deltaYaw, 0f, Space.World);
         }
-        // Pitch (rotate camera vertically)
-        if (enablePitch)
+        if (enablePitch && cam != null)
         {
             pitch -= mouseDelta.y * lookSensitivity;
             pitch = Mathf.Clamp(pitch, -89f, 89f);
@@ -94,31 +93,33 @@ public class PlayerAgentController : MonoBehaviour
         if (ammo <= 0) return;
         ammo--;
         GameObject b = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-        Rigidbody rb = b.GetComponent<Rigidbody>();
-        rb.linearVelocity = bulletSpawn.forward * bulletSpeed;
+        if (b.TryGetComponent<Rigidbody>(out var rb))
+        {
+            rb.linearVelocity = bulletSpawn.forward * bulletSpeed;
+        }
     }
 
     public void TakeDamage(int dmg)
     {
         health -= dmg;
-        if (health <= 0) GameManager.instance.PlayerDied();
+        if (health <= 0)
+        {
+            if (GameManager.instance != null)
+                GameManager.instance.PlayerDied();
+            else
+                Debug.LogError("GameManager.instance is null!");
+        }
     }
 
-    public void Reload()
-    {
-        ammo = maxAmmo;
-    }
+    public void Reload() => ammo = maxAmmo;
 
-    public void AddAmmo(int amount)
-    {
-        ammo = Mathf.Min(ammo + amount, maxAmmo);
-    }
+    public void AddAmmo(int amount) => ammo = Mathf.Min(ammo + amount, maxAmmo);
 
-    // Called by UIManager
     public void SetHealth(int newHealth) => health = newHealth;
 
     private void HandleZoom()
     {
+        if (cam == null) return;
         float scroll = Mouse.current.scroll.ReadValue().y;
         if (Mathf.Abs(scroll) > 0.01f)
         {
@@ -131,6 +132,10 @@ public class PlayerAgentController : MonoBehaviour
     {
         enemiesDefeated++;
         Debug.Log($"Enemies defeated: {enemiesDefeated}");
-        // Remove level up UI trigger from here
+    }
+
+    public void IncreaseSpeed(float amount = 1f)
+    {
+        moveSpeed += amount;
     }
 }

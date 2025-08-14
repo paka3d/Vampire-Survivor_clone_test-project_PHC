@@ -31,13 +31,16 @@ public class LevelUpUI : MonoBehaviour
             panel.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+         Time.timeScale = 0f; // Pause the game
 
         // Play a random video from the array
         if (videoPlayer != null && levelUpVideos.Length > 0)
         {
             int index = Random.Range(0, levelUpVideos.Length);
+            videoPlayer.Stop(); // Ensure player is stopped before changing clip
             videoPlayer.clip = levelUpVideos[index];
             videoPlayer.Play();
+            Debug.Log($"Playing video: {levelUpVideos[index].name}");
         }
     }
 
@@ -47,13 +50,14 @@ public class LevelUpUI : MonoBehaviour
             panel.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        Time.timeScale = 1f; // Resume the game
         if (videoPlayer != null)
             videoPlayer.Stop();
     }
 
     private void IncreaseSpeed()
     {
-        player.moveSpeed += 1f;
+        player.IncreaseSpeed(1f);
         Hide();
     }
 
